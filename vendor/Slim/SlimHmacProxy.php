@@ -21,8 +21,14 @@ class SlimHmacProxy extends \Proxy\Proxy {
                                     'getDynamicForm_test' => 'restApiDefaultCall',
 
         
-        
-         //** MblLogin ----------------------
+        /** ---------MblSinavlar  */ 
+                     
+                                    'GetSinavTurleri_mblsinavlar' => 'restApiDefaultCall',
+                                  
+         
+        /*---------MblSinavlar */
+
+        /* ----------------------MblLogin */ 
                                     'gnlKullaniciMebKoduFindByTcKimlikNo_mbllogin' => 'restApiDefaultCall',
                                     'gnlKullaniciFindForLoginByTcKimlikNo_mbllogin' => 'restApiDefaultCall',
                                     'mobilfirstdata_mbllogin' => 'restApiDefaultCall',
@@ -110,13 +116,13 @@ class SlimHmacProxy extends \Proxy\Proxy {
         
         
           
-         //** MobilSettings ----------------------
+        //** MobilSettings ----------------------
                                     'mobilUrlData_mobilsettings' => 'restApiDefaultCall',
                                     'MobilwsdlEncryptPassword_mobilsettings' => 'restApiDefaultCall',
                                     'MobilwsdlDecryptPassword_mobilsettings' => 'restApiDefaultCall',
                                 
         
-        //**---- MobilSettings -------------------        
+        //*---- MobilSettings -------------------        
         
           //**---- mobileUserMessages -------------------   
                             'GetSemesters_mobileusermessages' => 'restApiDefaultCall',
@@ -1330,6 +1336,10 @@ class SlimHmacProxy extends \Proxy\Proxy {
             $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
         }   else if (substr($endPointFunction, -19) == '_mobileusermessages') {
             $this->setRestApiEndPoint('mobileusermessages.php/');
+            //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
+            $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
+        }   else if (substr($endPointFunction, -12) == '_mblSinavlar') {
+            $this->setRestApiEndPoint('mblsinavlar.php/');
             //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
             $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
         }
