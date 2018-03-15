@@ -120,6 +120,7 @@ class SlimHmacProxy extends \Proxy\Proxy {
                                     'mobilUrlData_mobilsettings' => 'restApiDefaultCall',
                                     'MobilwsdlEncryptPassword_mobilsettings' => 'restApiDefaultCall',
                                     'MobilwsdlDecryptPassword_mobilsettings' => 'restApiDefaultCall',
+                                    'MobilUrlDataV2_mobilsettings' => 'restApiDefaultCall',
                                 
         
         //*---- MobilSettings -------------------        
