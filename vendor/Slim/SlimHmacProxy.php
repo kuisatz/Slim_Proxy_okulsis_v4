@@ -104,7 +104,9 @@ class SlimHmacProxy extends \Proxy\Proxy {
                                     'KyOgretmeninOdevListesi_mbllogin' => 'restApiDefaultCall',
                                     'KyOgretmeninOdevListesiSinifBazli_mbllogin' => 'restApiDefaultCall',
                                     'KyOgretmeninOdevListesiOgrenciBazli_mbllogin' => 'restApiDefaultCall',
-         
+                                    'SinavTurleriCombo_mbllogin' => 'restApiDefaultCall',
+        
+        
         
                     /** ---------rpt  */ 
                      
